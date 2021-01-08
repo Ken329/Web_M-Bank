@@ -91,10 +91,6 @@ body{
 .login-right-div button:focus{
     outline: none;
 }
-.login-right-div button:hover{
-    width: 210px;
-    height: 55px;
-}
 .container-decorate{
     box-shadow: 0px 1px 13px 5px #000000;
     border-radius: 50px;
