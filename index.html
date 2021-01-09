@@ -6,7 +6,6 @@
     <title>M bank</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,26 +14,31 @@
             <p class="login-left-p">Welcome to M-Bank</p>
         </div>
         <div class="login-right-container container-decorate">
-            <h2 class="login-right-h2">Login</h2>
-            <div class="login-right-div">
+            <div class="login-right-divLogin">
+                <div id="loginToggle"></div>
+                <button id="btnLogin" class="login-right-button" onclick="login()">Login</button>
+                <button id="btnSignUp" class="login-right-button" onclick="signUp()">Sign Up</button>
+            </div>
+            <form id="login-div" class="login-right-div">
                 <p class="login-right-div-p">Username</p>
                 <input type="text" id="username" placeholder="Enter your username">
                 <p class="login-right-div-p">Password</p>
                 <input type="text" id="password" placeholder="Enter your password">
                 <div class="login-right-div-buttonBox">
+                    <button type="submit" id="login_button">Login</button>
+                </div>
+            </form>
+            <form id="signup-div" class="login-right-div">
+                <p class="login-right-div-p">Create Username</p>
+                <input type="text" id="username" placeholder="Enter new username">
+                <p class="login-right-div-p">Create Password</p>
+                <input type="text" id="password" placeholder="Enter new password">
+                <div class="login-right-div-buttonBox">
                     <button type="submit" id="login_button" onclick="login()">Login</button>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/8.2.2/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-        https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/8.2.2/firebase-analytics.js"></script>
-
-    <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
