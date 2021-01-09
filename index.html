@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <form action="insert.php" method="POST"></form>
     <div class="container">
         <div class="login-left-container container-decorate">
             <i class="fas fa-10x fa-piggy-bank login-left-icon"></i>
@@ -21,20 +22,20 @@
             </div>
             <form id="login-div" class="login-right-div">
                 <p class="login-right-div-p">Username</p>
-                <input type="text" id="username" placeholder="Enter your username">
+                <input type="text" id="login_username" placeholder="Enter your username">
                 <p class="login-right-div-p">Password</p>
-                <input type="text" id="password" placeholder="Enter your password">
+                <input type="text" id="login_password" placeholder="Enter your password">
                 <div class="login-right-div-buttonBox">
                     <button type="submit" id="login_button">Login</button>
                 </div>
             </form>
             <form id="signup-div" class="login-right-div">
                 <p class="login-right-div-p">Create Username</p>
-                <input type="text" id="username" placeholder="Enter new username">
+                <input type="text" id="signup_username" placeholder="Enter new username">
                 <p class="login-right-div-p">Create Password</p>
-                <input type="text" id="password" placeholder="Enter new password">
+                <input type="text" id="signup_password" placeholder="Enter new password">
                 <div class="login-right-div-buttonBox">
-                    <button type="submit" id="login_button" onclick="login()">Login</button>
+                    <button type="submit" id="login_button">Login</button>
                 </div>
             </form>
         </div>
