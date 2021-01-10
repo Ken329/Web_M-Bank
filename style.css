@@ -56,16 +56,14 @@ body{
     margin-top: 40px;
     box-shadow: 0px 1px 13px 5px tomato;
 }
-#loginToggle{
-    position: absolute;
-    width: 125px;
-    height: 50px;
+.login-right-divLogin button:nth-child(1){
     background-color: tomato;
-    border-radius: 20px;
-    transition: .5s;
+}
+#btnLogin{
+    background-color: #ED4325;
 }
 .login-right-button{
-    width: 120px;
+    width: 122px;
     height: 100%;
     border-radius: 20px;
     border: none;
