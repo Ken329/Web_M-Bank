@@ -16,8 +16,8 @@
         </div>
         <div class="login-right-container container-decorate">
             <div class="login-right-divLogin">
-                <button id="btnLogin" class="login-right-button" onclick="login()">Login</button>
-                <button id="btnSignUp" class="login-right-button" onclick="signUp()">Sign Up</button>
+                <button id="btnLogin" class="login-right-button" onclick="switchLogin()">Login</button>
+                <button id="btnSignUp" class="login-right-button" onclick="switchSignUp()">Sign Up</button>
             </div>
             <form id="login-div" class="login-right-div">
                 <p class="login-right-div-p">Username</p>
@@ -25,7 +25,7 @@
                 <p class="login-right-div-p">Password</p>
                 <input type="text" id="login_password" placeholder="Enter your password">
                 <div class="login-right-div-buttonBox">
-                    <button type="submit" id="login_button">Login</button>
+                    <button type="submit" id="login_button" onclick="login()">Login</button>
                 </div>
             </form>
             <form id="signup-div" class="login-right-div">
@@ -34,7 +34,7 @@
                 <p class="login-right-div-p">Create Password</p>
                 <input type="text" id="signup_password" name="signUpPassword" placeholder="Enter new password">
                 <div class="login-right-div-buttonBox">
-                    <button type="submit" id="login_button" onclick="insertData()">Login</button>
+                    <button type="submit" id="signUp_button" onclick="signUp()">Sign Up</button>
                 </div>
             </form>
         </div>
