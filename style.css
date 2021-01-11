@@ -9,7 +9,11 @@ div{
 body{
     background-color: white;
 }
-.container{
+a{
+    text-decoration: none;
+}
+/*index page*/
+.index-container{
     width: 90%;
     height: 600px;
     margin: auto;
@@ -69,6 +73,7 @@ body{
     border: none;
     background-color: transparent;
     position: relative;
+    cursor: pointer;
 }
 .login-right-button:focus{
     outline: none;
@@ -131,6 +136,119 @@ body{
     outline: none;
 }
 
+/*main page*/
+.header-main-container{
+    width: 100%;
+    height: 100px;
+    background-color: tomato;
+    text-align: center;
+}
+.header-main-sideMenu{
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+h1{
+    font-size: 40px;
+}
+.header-main-p{
+    display: inline-block;
+    color: white;
+    margin: 15px 30px;
+}
+.header-main-div{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+.header-main-div-icon{
+    margin: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.header-main-div a{
+    text-decoration: none;
+}
+.drop-down-menu{
+    width: 100%;
+    height: 120px;
+    background-color: white;
+    display: none;
+    transition: .5s;
+}
+.drop-down-element{
+    height: 33.33%;
+    background-color: tomato;
+    border: 1px solid white;
+    text-align: center;
+    cursor: pointer;
+}
+.drop-down-icon{
+    color: white;
+    margin: 3px;
+    display: inline-block;
+}
+.body-main-bar-container{
+    margin-top: 10px;
+    width: 100%;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    border: 2px solid tomato;
+    border-left: none;
+    border-right: none;
+}
+.body-main-bar-container div:nth-child(1){
+    margin-left: 1.75px;
+}
+.body-main-bar-div{
+    width: 24.5%;
+    height: 95%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 20px;
+    margin-top:2px;
+}
+.body-main-bar-div-p{
+    margin-top: 20px;
+    display: inline-block;
+    color: black;
+}
+#p_ammount, #p_transaction, #p_history, #p_loan{
+    display: none;
+}
+#i_ammount, #i_transaction, #i_history, #i_loan{
+    cursor: pointer;
+}
+.body-main-container{
+    width: 50%;
+    height: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    box-shadow:  0px 1px 13px 5px black;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: none;
+    text-align: center;
+}
+.body-main-container h2{
+    padding-top: 30px;
+}
+.body-main-container p{
+    margin-top: 30px;
+    font-size: 20px;
+    position: absolute;
+    margin-left: 40px;
+}
+
+
 @media(min-width:1211px) and (max-width:1285px){
     #login-div{
         left: 100px;
@@ -181,6 +299,9 @@ body{
     .login-right-div input{
         width: 300px;
     }
+    .drop-down-menu{
+        display: none;
+    }
 }
 @media(max-width:855px){
     .login-right-div{
@@ -188,6 +309,12 @@ body{
     }
     .login-right-div input{
         width: 200px;
+    }
+    .header-main-div-icon{
+        display: none;
+    }
+    .header-main-sideMenu{
+        display: block;
     }
 }
 @media(max-width:800px){

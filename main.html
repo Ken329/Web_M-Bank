@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>M Bank</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <p>Successful login</p>
+    <header class="header-main-container">
+        <i id="side_menu" class="fas fa-3x fa-align-justify header-main-sideMenu"></i>
+        <i class="fas fa-4x fa-piggy-bank header-main-p"></i>
+        <h1 class="header-main-p">Welcome to M Bank</h1>
+        <div class="header-main-div">
+            <a href="tel:123-456-789">
+                <i class="fas fa-2x fa-phone-square-alt header-main-div-icon"></i>
+            </a>
+            <a href="#">
+                <i class="fas fa-2x fa-info-circle header-main-div-icon"></i>
+            </a>
+            <i id="main-logout" class="fas fa-2x fa-sign-out-alt header-main-div-icon"></i>
+        </div>
+    </header>
+    <div id="drop_down_menu" class="drop-down-menu">
+        <div class="drop-down-element">
+            <a href="tel:123-456-789">
+                <i class="fas fa-2x fa-phone-square-alt drop-down-icon"></i>
+                <p class="drop-down-icon">Tel: 123-456-789</p>
+            </a>
+        </div>
+        <div class="drop-down-element">
+            <a href="#">
+                <i class="fas fa-2x fa-info-circle  drop-down-icon"></i>
+                <p class="drop-down-icon">Detail info</p>
+            </a>
+        </div>
+        <div class="drop-down-element">
+            <i class="fas fa-2x fa-sign-out-alt  drop-down-icon"></i>
+            <p id="drop-logout" class="drop-down-icon">Logout</p>
+        </div>
+    </div>
+    <div class="body-main-bar-container">
+        <div id="div_ammount" class="body-main-bar-div">
+            <i id="i_ammount" class="fas fa-1x fa-dollar-sign body-main-bar-div-p"></i>
+            <p id="p_ammount" class="body-main-bar-div-p">My Ammount</p>
+        </div>
+        <div id="div_transaction" class="body-main-bar-div">
+            <i id="i_transaction" class="fas fa-1x fa-exchange-alt body-main-bar-div-p"></i>
+            <p id="p_transaction" class="body-main-bar-div-p">My Transaction</p>
+        </div>
+        <div id="div_history" class="body-main-bar-div">
+            <i id="i_history" class="fas fa-1x fa-history body-main-bar-div-p"></i>
+            <p id="p_history" class="body-main-bar-div-p">My History</p>
+        </div>
+        <div id="div_loan" class="body-main-bar-div">
+            <i id="i_loan" class="fas fa-1x fa-landmark body-main-bar-div-p"></i>
+            <p id="p_loan" class="body-main-bar-div-p">My Loan</p>
+        </div>
+    </div>
+    <div id="ammount_div" class="body-main-container">
+        <h2>Total Balance</h2>
+        <p>Balance: 0</p>
+    </div>
+    <div id="transaction_div" class="body-main-container">
+        <h2>Transaction</h2>
+        <p>Transaction: 0</p>
+    </div>
+    <div id="history_div" class="body-main-container">
+        <h2>Transaction History</h2>
+        <p>No History</p>
+    </div>
+    <div id="loan_div" class="body-main-container">
+        <h2>Loan</h2>
+        <p>Updating Features</p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
